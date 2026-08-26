@@ -148,10 +148,7 @@ management_group_settings = {
       subscription_id       = "$${subscription_id_identity}"
       management_group_name = "identity"
     }
-    connectivity = {
-      subscription_id       = "$${subscription_id_connectivity}"
-      management_group_name = "connectivity"
-    }
+
     management = {
       subscription_id       = "$${subscription_id_management}"
       management_group_name = "management"
@@ -182,20 +179,8 @@ management_group_settings = {
         }
       }
     }
-    connectivity = {
-      policy_assignments = {
-        Enable-DDoS-VNET = {
-          creation_enabled = false
-        }
-      }
-    }
-    landingzones = {
-      policy_assignments = {
-        Enable-DDoS-VNET = {
-          creation_enabled = false
-        }
-      }
-    }
+
+
     corp = {
       policy_assignments = {
         Deploy-Private-DNS-Zones = {
